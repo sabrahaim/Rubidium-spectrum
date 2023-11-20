@@ -9,6 +9,14 @@ voltage = np.array(data_free['voltage'])
 time = np.array(data_free['time'])
 print(time,voltage)
 
+def gaussian(time, A, mu, sigma):
+    return A* np.exp(-(time - mu)**2 / (2 * sigma**2))
+
+
+
+
+
+
 # frequency = time*a + b 
 # print(frequency)
 
